@@ -1,0 +1,304 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+button {
+    border: 0px;
+    background-color: transparent;
+}
+
+body {
+    margin: 10px 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+    /*navbar*/
+
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#nav-left img {
+    height: 40px;
+}
+
+#membership {
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+    /*main body*/
+
+#container {
+    display: flex;
+}
+
+    /*left section*/
+
+#left-content {
+    width: 70%;
+}
+
+.main-article {
+    display: flex;
+}
+
+.main-article-info {
+    width: 600px;
+}
+    
+.main-article-description {
+    display: flex;
+    align-items: center;
+}
+
+.main-article-description i {
+    padding: 5px;
+}
+
+.main-article-description {
+    font-weight: bold;
+}
+
+#main-in {
+    padding: 5px;
+    color: grey;
+    font-size: 11pt;
+}
+
+.main-article-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.main-article-content {
+    color: grey;
+}
+
+.main-article-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-article-details-specs {
+    display: flex;
+}
+
+.main-article-cover {
+    margin-left: 20px;
+    background-image: url("assets/article1-cover.jpg");
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+
+    /*right section*/
+
+#right-menu {
+    width: 280px;
+}
+
+.section-title {
+    font-weight: 500;
+}
+
+    /*connect twitter*/
+
+#connect-twitter {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    font-size: 11pt;
+    border-bottom: 1px lightgray solid;
+}
+
+#connect-twitter * {
+    margin: 5px;
+}
+
+#medium-x {
+    display: flex;
+}
+
+#connect-twitter img {
+    height: 15px;
+}
+
+#button-connectx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px grey solid;
+    width: 150px;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+#xlogo-button {
+    margin-right: 0px;
+}
+
+#connect-twitter a {
+    color: grey;
+    font-size: smaller;
+}
+    /*recommended topics*/
+
+#recommended-topics {
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.topic-link {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    padding: 10px;
+    width: 63 px;
+    font-size: small;
+}
+
+#topic-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    /*follow suggestions*/
+
+#follow-suggestions {
+    margin: 15px;
+}
+
+.user-record {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.user-name {
+    font-size: small;
+    margin-bottom: 3px;
+}
+
+.user-description {
+    width: 100px;
+    color: rgb(155, 154, 154);
+    font-size: x-small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-photo {
+    padding: 15px;
+}
+
+.fa-solid {
+    font-size: larger;
+}
+
+.follow-button {
+    border: 1px solid #6b6b6b;
+    border-radius: 20px;
+    padding: 10px;
+    color: #383838;
+    margin-left: 20px;
+}
+
+    /* recently saved */
+
+#recently-saved {
+    margin-left: 15px;
+}
+
+#recently-saved p {
+    font-weight: 500;
+}
+
+.article {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+}
+
+.article-info {
+    padding: 5px;   
+}
+
+/* .article-info:nth-child(2) {
+    font-size: 10px;
+    color: grey;
+} */
+
+#span {
+    font-size: 12px;
+    color: grey;
+    font-weight: 500;
+}
+
+.article-info-title, .author-name {
+    font-weight: bold;
+    font-size: small;
+}
+
+.author-img {
+    font-size: small;   
+}
+
+.article-title {
+    font-weight: bold;
+    padding: 2px;
+}
+
+.article-details {
+    color: lightgray;
+    font-size: 8pt;
+    display: flex;
+}
+
+.article-details * {
+    padding: 2px;
+}
+
+.fa-square {
+    font-size: 2px;
+    vertical-align:middle
+}
+
+.fa-star {
+    font-size: 8px;
+    vertical-align: middle;
+}
+
+#see-more {
+    color: rgb(49, 188, 49);
+    font-size: smaller;
+}
+
+/* .saved-articles
+.article-info
+.article-details
+.article-date
+.reading-time */
+
+    /* bottom menu */
+
+#bottom-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+    font-size: small;
+    padding: 7px;
+}
