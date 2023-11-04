@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
 }
 
 button {
@@ -10,13 +10,17 @@ button {
 }
 
 body {
-    margin: 10px 60px;
     font-family: 'Roboto', sans-serif;
 }
 
     /*navbar*/
+#header {
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 5px 0px 15px rgb(236, 236, 236);
+}
 
 #navbar-container {
+    margin: 0px 11%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,24 +36,61 @@ div#nav-left img {
     padding: 5px;
 }
 
+#membership a {
+    text-decoration: none;
+    color: grey;
+}
+
+div.right * {
+    padding: 3px;
+}
+
     /*main body*/
 
 #container {
+    margin: auto;
     display: flex;
+    margin-top: 25px;
+    width: fit-content;
+    width: 80%;
 }
 
     /*left section*/
 
 #left-content {
-    width: 70%;
+    width: 60%;
+    border-right: 1px solid rgb(236, 236, 236);
 }
+
+    /* bar */
+
+#select-section {
+    display: flex;
+    border-bottom: 1.5px solid rgb(236, 236, 236);
+    color: grey;
+}
+
+#select-section * {
+    padding: 5px;
+    margin-left: 7px;
+}
+
+#recommended-for-you {
+    color: black;
+    border-bottom: 1.5px solid black;
+    transform: translateY(1px)
+}
+
+    /*article area*/
 
 .main-article {
     display: flex;
+    align-items: center;
+    margin: 30px;
 }
 
 .main-article-info {
-    width: 600px;
+    width: 70%;
 }
     
 .main-article-description {
@@ -58,7 +99,8 @@ div#nav-left img {
 }
 
 .main-article-description i {
-    padding: 5px;
+    padding-right: 5px;
+    font-size: small;
 }
 
 .main-article-description {
@@ -73,11 +115,14 @@ div#nav-left img {
 
 .main-article-title {
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
 }
 
 .main-article-content {
     color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .main-article-details {
@@ -87,20 +132,44 @@ div#nav-left img {
 
 .main-article-details-specs {
     display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    font-size: 8pt;
+    color: #8d8d8d;
+}
+
+
+.main-article-topic {
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 8px!important; /*so che non andrebbe usato !important, ma non riesco a risolvere il padding che ho dato a riga 142 selezioonando tutti gli elementi dentro main-article-details-specs*/
+}
+
+.main-article-details-specs * {
+    padding: 3px;
+}
+
+.main-article-actions *{
+    padding: 5px;
 }
 
 .main-article-cover {
     margin-left: 20px;
-    background-image: url("assets/article1-cover.jpg");
-    background-size: cover;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
 }
 
     /*right section*/
 
-#right-menu {
-    width: 280px;
+/* #right-menu {
+    margin: 20px;
+    display: flex;
+    flex-flow: column wrap;
+} */
+
+#right-menu>div {
+    margin: 15px 80px;
 }
 
 .section-title {
@@ -116,7 +185,7 @@ div#nav-left img {
     padding: 15px;
     text-align: center;
     font-size: 11pt;
-    border-bottom: 1px lightgray solid;
+    border-bottom: 1px rgb(236, 236, 236) solid;
 }
 
 #connect-twitter * {
@@ -152,9 +221,16 @@ div#nav-left img {
     /*recommended topics*/
 
 #recommended-topics {
-    padding: 15px;
+    padding: 10px;
     display: flex;
     flex-flow: column wrap;
+}
+
+#topic-box div {
+    background-color: rgb(226, 226, 226);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
 }
 
 .topic-link {
@@ -163,11 +239,13 @@ div#nav-left img {
     padding: 10px;
     width: 63 px;
     font-size: small;
+
 }
 
 #topic-box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
     /*follow suggestions*/
@@ -232,11 +310,6 @@ div#nav-left img {
     padding: 5px;   
 }
 
-/* .article-info:nth-child(2) {
-    font-size: 10px;
-    color: grey;
-} */
-
 #span {
     font-size: 12px;
     color: grey;
@@ -282,18 +355,12 @@ div#nav-left img {
     font-size: smaller;
 }
 
-/* .saved-articles
-.article-info
-.article-details
-.article-date
-.reading-time */
-
     /* bottom menu */
 
 #bottom-menu {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 20px;
 }
 
 .menu-link {
