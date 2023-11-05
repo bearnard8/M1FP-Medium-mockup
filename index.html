@@ -11,12 +11,15 @@
     </style>        
 </head>
 <body>
+
+    <!-- header -->
+
     <div id="header">
         <div id="navbar-container">
             <div id="nav-left">
                 <img src="assets/logo.png" alt="Logo Medium">
             </div>
-            <div id="nav" class="right">
+            <div id="nav-right">
                 <button id="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
@@ -37,422 +40,423 @@
             </div>
         </div>
     </div>
+
+    <!-- container -->
+
     <div id="container">
-        <div class="flex-item" id="left-content">
+        <div id="left-content">
             <div id="select-section">
-                <div id="following">
+                <div>
                     FOLLOWING
                 </div>
                 <div id="recommended-for-you">
                     RECOMMENDED FOR YOU
                 </div>
             </div>
-            <div class="main-article">
-                <div class="main-article-info">
-                    <div class="main-article-description">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="main-article-author">
-                            Kolby Sisk
-                        </div>
-                        <div id="main-in">
-                            in
-                        </div>
-                        <div class="main-article-category">
-                            Udacity Eng & Data
-                        </div>
-                    </div>
-                    <div class="main-article-title">
-                        React state management in 2022 - Return of the Redux
-                    </div>
-                    <div class="main-article-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
-                    </div>
-                    <div class="main-article-details">
-                        <div class="main-article-details-specs">
-                            <div class="main-article-date">
-                                Dec 3
-                            </div>
+
+            <!-- main articles section -->
+            <div>
+                <div class="main-article">
+                    <div class="main-article-info">
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
                             <div>
-                                <i class="fa-solid fa-square"></i>
+                                Kolby Sisk
                             </div>
-                            <div class="main-article-reading-time">
-                                4 min read
-                            </div>
+                            <h6>in</h6>
                             <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-topic" id="article-topic">
-                                React
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-status">
-                                Popular on Medium
+                                Udacity Eng & Data
                             </div>
                         </div>
-                        <div class="main-article-actions">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="main-article-title">
+                            React state management in 2022 - Return of the Redux
+                        </div>
+                        <div class="main-article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
+                        </div>
+                        <div class="main-article-details">
+                            <div class="main-article-details-specs">
+                                <div>
+                                    Dec 3
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    4 min read
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="main-article-topic">
+                                    React
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    Popular on Medium
+                                </div>
+                            </div>
+                            <div class="main-article-actions">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/article1-cover.jpg" alt="Tech" class="main-article-cover"> 
                 </div>
-                <img src="assets/article1-cover.jpg" alt="Tech" class="main-article-cover"> 
-            </div>
-            <div class="main-article">
-                <div class="main-article-info">
-                    <div class="main-article-description">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="main-article-author">
-                            Navoda Nilakshi
-                        </div>
-                    </div>
-                    <div class="main-article-title">
-                        How To Sanitize Your Express App Against MongoDB Injection & Cross-Site Scripting.
-                    </div>
-                    <div class="main-article-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
-                    </div>
-                    <div class="main-article-details">
-                        <div class="main-article-details-specs">
-                            <div class="main-article-date">
-                                Dec 19
-                            </div>
+                <div class="main-article">
+                    <div class="main-article-info">
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
                             <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-reading-time">
-                                5 min read
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-topic">
-                                Web Development
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-status">
-                                Based on your reading history
+                                Navoda Nilakshi
                             </div>
                         </div>
-                        <div class="main-article-actions">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="main-article-title">
+                            How To Sanitize Your Express App Against MongoDB Injection & Cross-Site Scripting.
+                        </div>
+                        <div class="main-article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
+                        </div>
+                        <div class="main-article-details">
+                            <div class="main-article-details-specs">
+                                <div>
+                                    Dec 19
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    5 min read
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="main-article-topic">
+                                    Web Development
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    Based on your reading history
+                                </div>
+                            </div>
+                            <div class="main-article-actions">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/article2-cover.jpg" alt="Tech" class="main-article-cover">   
                 </div>
-                <img src="assets/article2-cover.jpg" alt="Tech" class="main-article-cover">   
-            </div>
-            <div class="main-article">
-                <div class="main-article-info">
-                    <div class="main-article-description">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="main-article-author">
-                            Divyesh Balani
-                        </div>
-                        <div id="main-in">
-                            in
-                        </div>
-                        <div class="main-article-category">
-                            DhiWise
-                        </div>
-                    </div>
-                    <div class="main-article-title">
-                        React 18 new features and updates
-                    </div>
-                    <div class="main-article-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
-                    </div>
-                    <div class="main-article-details">
-                        <div class="main-article-details-specs">
-                            <div class="main-article-date">
-                                Nov 24
-                            </div>
+                <div class="main-article">
+                    <div class="main-article-info">
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
                             <div>
-                                <i class="fa-solid fa-square"></i>
+                                Divyesh Balani
                             </div>
-                            <div class="main-article-reading-time">
-                                4 min read
-                            </div>
+                            <h6>in</h6>
                             <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-topic">
-                                Reactjs
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-status">
-                                Popular on Medium
+                                DhiWise
                             </div>
                         </div>
-                        <div class="main-article-actions">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="main-article-title">
+                            React 18 new features and updates
+                        </div>
+                        <div class="main-article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
+                        </div>
+                        <div class="main-article-details">
+                            <div class="main-article-details-specs">
+                                <div>
+                                    Nov 24
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    4 min read
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="main-article-topic">
+                                    Reactjs
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    Popular on Medium
+                                </div>
+                            </div>
+                            <div class="main-article-actions">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/article3-cover.jpg" alt="Tech" class="main-article-cover">     
                 </div>
-                <img src="assets/article3-cover.jpg" alt="Tech" class="main-article-cover">     
-            </div>
-            <div class="main-article">
-                <div class="main-article-info">
-                    <div class="main-article-description">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="main-article-author">
-                            Vsevolod Ulyanovich
-                        </div>
-                        <div id="main-in">
-                            in
-                        </div>
-                        <div class="main-article-category">
-                            Fively Blog
-                        </div>
-                    </div>
-                    <div class="main-article-title">
-                        15 Best Web App Ideas for a Startup in 2021
-                    </div>
-                    <div class="main-article-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
-                    </div>
-                    <div class="main-article-details">
-                        <div class="main-article-details-specs">
-                            <div class="main-article-date">
-                                Oct 29
-                            </div>
+                <div class="main-article">
+                    <div class="main-article-info">
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
                             <div>
-                                <i class="fa-solid fa-square"></i>
+                                Vsevolod Ulyanovich
                             </div>
-                            <div class="main-article-reading-time">
-                                6 min read
-                            </div>
+                            <h6>in</h6>
                             <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-topic">
-                                Web Development
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-status">
-                                Popular on Medium
+                                Fively Blog
                             </div>
                         </div>
-                        <div class="main-article-actions">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="main-article-title">
+                            15 Best Web App Ideas for a Startup in 2021
+                        </div>
+                        <div class="main-article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
+                        </div>
+                        <div class="main-article-details">
+                            <div class="main-article-details-specs">
+                                <div>
+                                    Oct 29
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    6 min read
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="main-article-topic">
+                                    Web Development
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    Popular on Medium
+                                </div>
+                            </div>
+                            <div class="main-article-actions">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/article4-cover.jpg" alt="Tech" class="main-article-cover">     
                 </div>
-                <img src="assets/article4-cover.jpg" alt="Tech" class="main-article-cover">     
-            </div>
-            <div class="main-article">
-                <div class="main-article-info">
-                    <div class="main-article-description">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="main-article-author">
-                            Kolby Sisk
-                        </div>
-                        <div id="main-in">
-                            in
-                        </div>
-                        <div class="main-article-category">
-                            Udacity Eng & Data
-                        </div>
-                    </div>
-                    <div class="main-article-title">
-                        React state management in 2022 - Return of the Redux
-                    </div>
-                    <div class="main-article-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
-                    </div>
-                    <div class="main-article-details">
-                        <div class="main-article-details-specs">
-                            <div class="main-article-date">
-                                Dec 3
-                            </div>
+                <div class="main-article">
+                    <div class="main-article-info">
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
                             <div>
-                                <i class="fa-solid fa-square"></i>
+                                Kolby Sisk
                             </div>
-                            <div class="main-article-reading-time">
-                                4 min read
-                            </div>
+                            <h6>in</h6>
                             <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-topic">
-                                React
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-status">
-                                Popular on Medium
+                                Udacity Eng & Data
                             </div>
                         </div>
-                        <div class="main-article-actions">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="main-article-title">
+                            React state management in 2022 - Return of the Redux
+                        </div>
+                        <div class="main-article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
+                        </div>
+                        <div class="main-article-details">
+                            <div class="main-article-details-specs">
+                                <div>
+                                    Dec 3
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    4 min read
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="main-article-topic">
+                                    React
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    Popular on Medium
+                                </div>
+                            </div>
+                            <div class="main-article-actions">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/article1-cover.jpg" alt="Tech" class="main-article-cover"> 
                 </div>
-                <img src="assets/article1-cover.jpg" alt="Tech" class="main-article-cover"> 
-            </div>
-            <div class="main-article">
-                <div class="main-article-info">
-                    <div class="main-article-description">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="main-article-author">
-                            Navoda Nilakshi
-                        </div>
-                    </div>
-                    <div class="main-article-title">
-                        How To Sanitize Your Express App Against MongoDB Injection & Cross-Site Scripting.
-                    </div>
-                    <div class="main-article-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
-                    </div>
-                    <div class="main-article-details">
-                        <div class="main-article-details-specs">
-                            <div class="main-article-date">
-                                Dec 19
-                            </div>
+                <div class="main-article">
+                    <div class="main-article-info">
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
                             <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-reading-time">
-                                5 min read
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-topic">
-                                Web Development
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-status">
-                                Based on your reading history
+                                Navoda Nilakshi
                             </div>
                         </div>
-                        <div class="main-article-actions">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="main-article-title">
+                            How To Sanitize Your Express App Against MongoDB Injection & Cross-Site Scripting.
+                        </div>
+                        <div class="main-article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
+                        </div>
+                        <div class="main-article-details">
+                            <div class="main-article-details-specs">
+                                <div>
+                                    Dec 19
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    5 min read
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="main-article-topic">
+                                    Web Development
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    Based on your reading history
+                                </div>
+                            </div>
+                            <div class="main-article-actions">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/article2-cover.jpg" alt="Tech" class="main-article-cover">   
                 </div>
-                <img src="assets/article2-cover.jpg" alt="Tech" class="main-article-cover">   
-            </div>
-            <div class="main-article">
-                <div class="main-article-info">
-                    <div class="main-article-description">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="main-article-author">
-                            Divyesh Balani
-                        </div>
-                        <div id="main-in">
-                            in
-                        </div>
-                        <div class="main-article-category">
-                            DhiWise
-                        </div>
-                    </div>
-                    <div class="main-article-title">
-                        React 18 new features and updates
-                    </div>
-                    <div class="main-article-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
-                    </div>
-                    <div class="main-article-details">
-                        <div class="main-article-details-specs">
-                            <div class="main-article-date">
-                                Nov 24
-                            </div>
+                <div class="main-article">
+                    <div class="main-article-info">
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
                             <div>
-                                <i class="fa-solid fa-square"></i>
+                                Divyesh Balani
                             </div>
-                            <div class="main-article-reading-time">
-                                4 min read
-                            </div>
+                            <h6>in</h6>
                             <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-topic">
-                                Reactjs
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-status">
-                                Popular on Medium
+                                DhiWise
                             </div>
                         </div>
-                        <div class="main-article-actions">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="main-article-title">
+                            React 18 new features and updates
+                        </div>
+                        <div class="main-article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
+                        </div>
+                        <div class="main-article-details">
+                            <div class="main-article-details-specs">
+                                <div>
+                                    Nov 24
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    4 min read
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="main-article-topic">
+                                    Reactjs
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    Popular on Medium
+                                </div>
+                            </div>
+                            <div class="main-article-actions">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/article3-cover.jpg" alt="Tech" class="main-article-cover">     
                 </div>
-                <img src="assets/article3-cover.jpg" alt="Tech" class="main-article-cover">     
-            </div>
-            <div class="main-article">
-                <div class="main-article-info">
-                    <div class="main-article-description">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="main-article-author">
-                            Vsevolod Ulyanovich
-                        </div>
-                        <div id="main-in">
-                            in
-                        </div>
-                        <div class="main-article-category">
-                            Fively Blog
-                        </div>
-                    </div>
-                    <div class="main-article-title">
-                        15 Best Web App Ideas for a Startup in 2021
-                    </div>
-                    <div class="main-article-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
-                    </div>
-                    <div class="main-article-details">
-                        <div class="main-article-details-specs">
-                            <div class="main-article-date">
-                                Oct 29
-                            </div>
+                <div class="main-article">
+                    <div class="main-article-info">
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
                             <div>
-                                <i class="fa-solid fa-square"></i>
+                                Vsevolod Ulyanovich
                             </div>
-                            <div class="main-article-reading-time">
-                                6 min read
-                            </div>
+                            <h6>in</h6>
                             <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-topic">
-                                Web Development
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-square"></i>
-                            </div>
-                            <div class="main-article-status">
-                                Popular on Medium
+                                Fively Blog
                             </div>
                         </div>
-                        <div class="main-article-actions">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        <div class="main-article-title">
+                            15 Best Web App Ideas for a Startup in 2021
+                        </div>
+                        <div class="main-article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit placeat et alias explicabo iste pariatur deleniti eius commodi sed, similique, quasi incidunt inventore cumque. Hic quo dignissimos est eos!
+                        </div>
+                        <div class="main-article-details">
+                            <div class="main-article-details-specs">
+                                <div>
+                                    Oct 29
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    6 min read
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="main-article-topic">
+                                    Web Development
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-square"></i>
+                                </div>
+                                <div>
+                                    Popular on Medium
+                                </div>
+                            </div>
+                            <div class="main-article-actions">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
                         </div>
                     </div>
+                    <img src="assets/article4-cover.jpg" alt="Tech" class="main-article-cover">     
                 </div>
-                <img src="assets/article4-cover.jpg" alt="Tech" class="main-article-cover">     
             </div>
         </div>
-        <div class="flex-item" id="right-menu">
+
+        <!-- right menu -->
+
+        <div id="right-menu">
+
+            <!-- connect X -->
+
             <div id="connect-twitter">
                 <div id="medium-x">
                     <img src="assets/logo-img.png" alt="Logo Medium">
@@ -461,50 +465,56 @@
                 </div>
                 <p>Discover Medium writers you already follow on X</p>
                 <button id="button-connectx">
-                    <span id="xlogo-button">
-                        <img src="assets/x-logo.png" alt="Logo X">
-                    </span>
-                    <span>Connect to X</span>
+                    <img src="assets/x-logo.png" alt="Logo X">
+                    <a href="">
+                        <span>Connect to X</span>
+                    </a>
                 </button>
-                <a href="">Maybe Later</a>
+                <a href="" id="maybelater">Maybe Later</a>
             </div>
+
+            <!-- recommended topics  -->
+
             <div id="recommended-topics">
                 <p class="section-title">Recommended topics</p>
                 <div id="topic-box">
                     <div>
-                        <a href="" class="topic-link">Technology</a>
+                        <a href="">Technology</a>
                     </div>
                     <div>
-                        <a href="" class="topic-link">Money</a>
+                        <a href="">Money</a>
                     </div>
                     <div>
-                        <a href="" class="topic-link">Business</a>
+                        <a href="">Business</a>
                     </div>
                     <div>
-                        <a href="" class="topic-link">Productivity</a>
+                        <a href="">Productivity</a>
                     </div>
                     <div>
-                        <a href="" class="topic-link">Psychology</a>
+                        <a href="">Psychology</a>
                     </div>
                     <div>
-                        <a href="" class="topic-link">Mindfulness</a>
+                        <a href="">Mindfulness</a>
                     </div>
                     <div>
-                        <a href="" class="topic-link">Art</a>
+                        <a href="">Art</a>
                     </div>
                 </div>
             </div>
+
+            <!-- follow suggestions -->
+
             <div id="follow-suggestions">
                 <p class="section-title">
                     Who to follow
                 </p>
-                <div id="users">
+                <div>
                     <div class="user-record">
                         <div class="user-photo">
                             <i class="fa-solid fa-user"></i>
                         </div>
-                        <div class="user-text">
-                            <div class="user-name">
+                        <div>
+                            <div>
                                 User
                             </div>
                             <div class="user-description">
@@ -512,15 +522,15 @@
                             </div>
                         </div>
                         <button class="follow-button">
-                            Follow
+                            <a href="">Follow</a>
                         </button>
                     </div>
                     <div class="user-record">
                         <div class="user-photo">
                             <i class="fa-solid fa-user"></i>
                         </div>
-                        <div class="user-text">
-                            <div class="user-name">
+                        <div>
+                            <div>
                                 User
                             </div>
                             <div class="user-description">
@@ -528,15 +538,15 @@
                             </div>
                         </div>
                         <button class="follow-button">
-                            Follow
+                            <a href="">Follow</a>
                         </button>
                     </div>
                     <div class="user-record">
                         <div class="user-photo">
                             <i class="fa-solid fa-user"></i>
                         </div>
-                        <div class="user-text">
-                            <div class="user-name">
+                        <div>
+                            <div>
                                 User
                             </div>
                             <div class="user-description">
@@ -544,40 +554,39 @@
                             </div>
                         </div>
                         <button class="follow-button">
-                            Follow
+                            <a href="">Follow</a>
                         </button>
                     </div>
                 </div>
             </div>
+
+            <!-- recently saved -->
+
             <div id="recently-saved">
                 <p class="section-title">Recently saved</p>
-                <div class="saved-articles">
+                <div>
                     <div class="article">
-                        <div class="article-author">
-                            <span class="author-img">
-                                <i class="fa-solid fa-user"></i>
-                            </span>
-                            <span class="article-info">
-                                <span class="author-name">
-                                    Eva Keiffenheim
-                                </span>
-                                <span id="span">in</span>
-                                <span class="article-info-title">
-                                    Age of Awareness
-                                </span>
-                            </span>
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
+                            <div>
+                                Eva Keiffenheim
+                            </div>
+                            <h6>in</h6>
+                            <div>
+                                Age of Awareness
+                            </div>
                         </div>
                         <div class="article-title">
                             The Feynman Technique Will Make You Remember What You Read
                         </div>
                         <div class="article-details">
-                            <div class="article-date">
+                            <div>
                                 Oct 2, 2020
                             </div>
                             <div>
                                 <i class="fa-solid fa-square"></i>
                             </div>
-                            <div class="reading-time">
+                            <div>
                                 6 min read
                             </div>
                             <div>
@@ -586,38 +595,37 @@
                         </div>
                     </div>
                     <div class="article">
-                        <div class="article-author">
-                            <span class="author-img">
-                                <i class="fa-solid fa-user"></i>
-                            </span>
-                            <span class="article-info">
-                                <span class="author-name">
-                                    Navoda Nilakshi
-                                </span>
-                                <span id="span">in</span>
-                                <span class="article-info-title">
-                                    Age of Awareness
-                                </span>
-                            </span>
+                        <div class="article-info-bar">
+                            <i class="fa-solid fa-user"></i>
+                            <div>
+                                Navoda Nilakshi
+                            </div>
+                            <h6>in</h6>
+                            <div>
+                                Age of Awareness
+                            </div>
                         </div>
                         <div class="article-title">
-                            How To Sanitize Your Express App Against MongoDB Injection & Cross-Site SCripting.
+                            How To Sanitize Your Express App Against MongoDB Injection & Cross-Site Scripting.
                         </div>
                         <div class="article-details">
-                            <div class="article-date">
+                            <div >
                                 Dec 19, 2023
                             </div>
                             <div>
                                 <i class="fa-solid fa-square"></i>
                             </div>
-                            <div class="reading-time">
+                            <div>
                                 6 min read
                             </div>
                         </div>
                     </div>
-                    <p id="see-more">See all (3)</p>
+                    <p id="see-all">See all (3)</p>
                 </div>
             </div>
+
+            <!-- bottom menu -->
+
             <div id="bottom-menu">
                 <a href="" class="menu-link">Help</a>
                 <a href="" class="menu-link">Status</a>

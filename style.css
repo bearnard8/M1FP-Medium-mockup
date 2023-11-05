@@ -1,7 +1,13 @@
+    /*general rules */
+
 * {
     margin: 0px;
     padding: 0px;
-    /* box-sizing: content-box; */
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
@@ -9,14 +15,25 @@ button {
     background-color: transparent;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+a:visited {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    user-select: none;
+    padding: 0px;
 }
 
     /*navbar*/
+
 #header {
-    border-bottom: 1px solid lightgrey;
-    box-shadow: 5px 0px 15px rgb(236, 236, 236);
+    box-shadow: 5px 0px 15px rgb(235, 235, 235);
+    position: sticky;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 #navbar-container {
@@ -30,19 +47,13 @@ div#nav-left img {
     height: 40px;
 }
 
-#membership {
-    border: 1px solid grey;
-    border-radius: 20px;
+#nav-right * {
     padding: 5px;
 }
 
-#membership a {
-    text-decoration: none;
-    color: grey;
-}
-
-div.right * {
-    padding: 3px;
+#membership {
+    border: 1px solid grey;
+    border-radius: 20px;
 }
 
     /*main body*/
@@ -55,6 +66,27 @@ div.right * {
     width: 80%;
 }
 
+    /*article details, same in main articles and recently saved*/
+
+.article-info-bar {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: small;
+}
+
+.article-info-bar i {
+    padding-right: 5px;
+    font-size: smaller;
+}
+
+h6 {
+    padding: 5px;
+    color: rgb(126, 126, 126);
+    font-size: 10pt;
+    margin-bottom: 2px;
+}
+
     /*left section*/
 
 #left-content {
@@ -62,15 +94,15 @@ div.right * {
     border-right: 1px solid rgb(236, 236, 236);
 }
 
-    /* bar */
+    /* selection bar */
 
 #select-section {
     display: flex;
     border-bottom: 1.5px solid rgb(236, 236, 236);
-    color: grey;
+    color: rgb(126, 126, 126);
 }
 
-#select-section * {
+#select-section div {
     padding: 5px;
     margin-left: 7px;
 }
@@ -78,10 +110,10 @@ div.right * {
 #recommended-for-you {
     color: black;
     border-bottom: 1.5px solid black;
-    transform: translateY(1px)
+    transform: translateY(1px);
 }
 
-    /*article area*/
+    /*main articles area*/
 
 .main-article {
     display: flex;
@@ -90,27 +122,7 @@ div.right * {
 }
 
 .main-article-info {
-    width: 70%;
-}
-    
-.main-article-description {
-    display: flex;
-    align-items: center;
-}
-
-.main-article-description i {
-    padding-right: 5px;
-    font-size: small;
-}
-
-.main-article-description {
-    font-weight: bold;
-}
-
-#main-in {
-    padding: 5px;
-    color: grey;
-    font-size: 11pt;
+    width: 75%;
 }
 
 .main-article-title {
@@ -119,7 +131,7 @@ div.right * {
 }
 
 .main-article-content {
-    color: grey;
+    color: rgb(126, 126, 126);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -135,38 +147,34 @@ div.right * {
     align-items: center;
     margin: 5px 0px;
     font-size: 8pt;
-    color: #8d8d8d;
+    color: rgb(126, 126, 126);
 }
 
+.main-article-details-specs .fa-solid, .main-article-actions .fa-solid {
+    padding: 7px;
+}
 
 .main-article-topic {
-    background-color: lightgray;
+    background-color: rgb(226, 226, 226);
     border-radius: 15px;
-    padding: 8px!important; /*so che non andrebbe usato !important, ma non riesco a risolvere il padding che ho dato a riga 142 selezioonando tutti gli elementi dentro main-article-details-specs*/
-}
-
-.main-article-details-specs * {
-    padding: 3px;
-}
-
-.main-article-actions *{
-    padding: 5px;
+    padding: 8px;
 }
 
 .main-article-cover {
-    margin-left: 20px;
-    width: 140px;
+    margin-left: 25px;
+    width: 20%;
     height: 140px;
     object-fit: cover;
 }
 
     /*right section*/
 
-/* #right-menu {
+#right-menu {
     margin: 20px;
     display: flex;
     flex-flow: column wrap;
-} */
+    width: 40%;
+}
 
 #right-menu>div {
     margin: 15px 80px;
@@ -174,6 +182,8 @@ div.right * {
 
 .section-title {
     font-weight: 500;
+    padding: 8px;
+    font-size: medium;
 }
 
     /*connect twitter*/
@@ -182,7 +192,7 @@ div.right * {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     font-size: 11pt;
     border-bottom: 1px rgb(236, 236, 236) solid;
@@ -204,140 +214,97 @@ div.right * {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px grey solid;
+    border: 1px #6b6b6b solid;
     width: 150px;
     border-radius: 50px;
     padding: 5px;
-}
-
-#xlogo-button {
-    margin-right: 0px;
-}
-
-#connect-twitter a {
-    color: grey;
+    font-size: medium;
     font-size: smaller;
 }
+
+#button-connectx img {
+    transform: translate(10px, -1px);
+}
+
+#maybelater {
+    text-decoration: underline;
+    color: rgb(126, 126, 126);
+}
+
     /*recommended topics*/
-
-#recommended-topics {
-    padding: 10px;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-#topic-box div {
-    background-color: rgb(226, 226, 226);
-    border-radius: 15px;
-    margin: 5px;
-    padding: 5px;
-}
-
-.topic-link {
-    text-decoration: none;
-    color: rgb(104, 104, 104);
-    padding: 10px;
-    width: 63 px;
-    font-size: small;
-
-}
 
 #topic-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+}
+
+#topic-box div {
+    background-color: rgb(226, 226, 226);
+    border-radius: 25px;
+    margin: 5px;
+    padding: 10px;
+    font-size: small;
 }
 
     /*follow suggestions*/
 
-#follow-suggestions {
-    margin: 15px;
-}
-
 .user-record {
     display: flex;
     align-items: center;
-    margin: 5px;
-}
-
-.user-name {
+    margin: 8px;
     font-size: small;
-    margin-bottom: 3px;
+
+}
+.user-photo {
+    padding: 15px;
+    font-size: larger;
 }
 
 .user-description {
     width: 100px;
-    color: rgb(155, 154, 154);
+    color: rgb(126, 126, 126);
     font-size: x-small;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.user-photo {
-    padding: 15px;
-}
-
-.fa-solid {
-    font-size: larger;
-}
-
 .follow-button {
     border: 1px solid #6b6b6b;
     border-radius: 20px;
     padding: 10px;
-    color: #383838;
+    color: rgb(126, 126, 126);
     margin-left: 20px;
+}
+
+.follow-button a {
+    color: grey;
+    
 }
 
     /* recently saved */
 
-#recently-saved {
-    margin-left: 15px;
-}
-
-#recently-saved p {
-    font-weight: 500;
+.article * {
+    padding: 1.5px;   
 }
 
 .article {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 5px;
+    margin: 10px 0px
 }
 
-.article-info {
-    padding: 5px;   
-}
-
-#span {
-    font-size: 12px;
-    color: grey;
-    font-weight: 500;
-}
-
-.article-info-title, .author-name {
+.article-info-title, .author-name, .author-img {
     font-weight: bold;
     font-size: small;
 }
 
-.author-img {
-    font-size: small;   
-}
-
 .article-title {
     font-weight: bold;
-    padding: 2px;
 }
 
 .article-details {
-    color: lightgray;
-    font-size: 8pt;
+    color: rgb(126, 126, 126);
+    font-size: x-small;
     display: flex;
-}
-
-.article-details * {
-    padding: 2px;
 }
 
 .fa-square {
@@ -350,9 +317,10 @@ div.right * {
     vertical-align: middle;
 }
 
-#see-more {
-    color: rgb(49, 188, 49);
+#see-all {
+    color: #63895C;
     font-size: smaller;
+    margin-top: 10px;
 }
 
     /* bottom menu */
@@ -360,12 +328,11 @@ div.right * {
 #bottom-menu {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    font-size: 10pt;
 }
 
-.menu-link {
-    text-decoration: none;
-    color: rgb(122, 122, 122);
-    font-size: small;
-    padding: 7px;
+.menu-link:link, .menu-link:visited {
+    color: rgb(126, 126, 126);
+    padding: 12px;
+    padding-left: 0px;
 }
